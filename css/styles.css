@@ -416,6 +416,9 @@ body {
   max-width: 264px;
   margin-right: 120px;
 }
+.social-media {
+  margin-right: 80px;
+}
 .title-social {
   font-weight: 500;
   font-size: 16px;
@@ -442,5 +445,13 @@ body {
 .sosial-link:hover,
 .sosial-link:focus {
   background-color: #31d0aa;
+}
+
+.title-form {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
 }
 /* #endregion footer */
