@@ -322,6 +322,7 @@ body {
 .list-portfolio {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
   row-gap: 48px;
 }
@@ -413,8 +414,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  max-width: 264px;
-  margin-right: 120px;
+  min-width: 264px;
+  height: 112px;
 }
 .social-media {
   margin-right: 80px;
@@ -446,12 +447,56 @@ body {
 .sosial-link:focus {
   background-color: #31d0aa;
 }
+.email-form-footer {
+  display: flex;
+  gap: 24px;
+}
 
-.title-form {
+.text-form-footer {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 16px;
   color: #fff;
+  margin-bottom: 16px;
+}
+.email-field-footer {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 8px 16px;
+  min-width: 264px;
+  height: 40px;
+}
+.email-field-footer::placeholder {
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+.button-subscribe {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  fill: #fff;
+  background-color: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  width: 165px;
+  height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-subscribe:focus,
+.button-subscribe:hover {
+  background-color: #404bbf;
 }
 /* #endregion footer */
