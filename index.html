@@ -544,7 +544,7 @@
               </svg>
             </div>
           </div>
-          <div class="wrapper-input-popup">
+          <div class="wrapper-input-textarea">
             <label class="user-label-field" for="comment">Comment</label>
             <textarea
               class="comment-texarea"
@@ -553,15 +553,24 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="wrapper-input-popup">
-            <input type="checkbox" id="policy" name="policy" value="agree" />
-            <label class="checkbox-label-field" for="policy"
-              ><span class="custom-checkbox"></span>I accept the terms and
-              conditions of the
+          <div class="wrapper-input-checkbox">
+            <input
+              class="label-agree visually-hidden"
+              type="checkbox"
+              id="policy"
+              name="policy"
+              value="agree"
+            />
+            <label class="agree-label-field" for="policy"
+              ><span class="custom-checkbox">
+                <svg class="checkmark-svg" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkmark"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
               <a href="#" class="text-iris"> Privacy Policy</a>
             </label>
           </div>
-          <button type="submit">Send</button>
+          <button class="recall-form-button" type="submit">Send</button>
         </form>
       </div>
     </div>
