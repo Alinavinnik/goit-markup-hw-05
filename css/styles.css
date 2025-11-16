@@ -594,9 +594,6 @@ body {
 .user-input:focus + .popup-icon {
   fill: #4d5ae5;
 }
-.wrapper-input-textarea {
-  margin-bottom: 16px;
-}
 .comment-texarea {
   width: 100%;
   height: 120px;
