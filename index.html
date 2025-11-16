@@ -493,6 +493,11 @@
     <!-- #region popup -->
     <div class="backdrop">
       <div class="popup">
+        <button class="close-popup">
+          <svg class="popup-icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
         <form class="popup-form">
           <p class="text-recall">
             Leave your contacts and we will call you back
@@ -539,18 +544,22 @@
               </svg>
             </div>
           </div>
-          <label class="user-label-field" for="comment">Comment</label>
-          <textarea
-            name="comment"
-            id="comment"
-            placeholder="Text input"
-          ></textarea>
-          <div>
-            <input type="checkbox" id="policy" name="policy" />
-            <label class="user-label-field" for="policy"
-              >I accept the terms and conditions of the
-              <span class="text-iris">Privacy Policy</span></label
-            >
+          <div class="wrapper-input-popup">
+            <label class="user-label-field" for="comment">Comment</label>
+            <textarea
+              class="comment-texarea"
+              name="comment"
+              id="comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="wrapper-input-popup">
+            <input type="checkbox" id="policy" name="policy" value="agree" />
+            <label class="checkbox-label-field" for="policy"
+              ><span class="custom-checkbox"></span>I accept the terms and
+              conditions of the
+              <a href="#" class="text-iris"> Privacy Policy</a>
+            </label>
           </div>
           <button type="submit">Send</button>
         </form>
